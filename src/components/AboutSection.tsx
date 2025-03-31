@@ -29,8 +29,8 @@ const AboutSection: React.FC = () => {
             },
             {
               icon: <CircleHelp className="w-10 h-10 text-ramen-purple" />,
-              title: "Seamless Integration",
-              description: "Easily integrate with your existing products and workflows."
+              title: "Compliant Ready",
+              description: "Meet the needs of the European Accessibility Act (EAA) with our accessibility solutions."
             }
           ].map((feature, idx) => (
             <div 
