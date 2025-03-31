@@ -7,9 +7,10 @@ interface FounderProps {
   name: string;
   role: string;
   avatarText: string;
+  linkedinUrl: string;
 }
 
-const Founder: React.FC<FounderProps> = ({ name, role, avatarText }) => {
+const Founder: React.FC<FounderProps> = ({ name, role, avatarText, linkedinUrl }) => {
   return (
     <div className="flex flex-col items-center">
       <Avatar className="w-32 h-32 mb-4 border-4 border-ramen-light-purple">
@@ -19,9 +20,15 @@ const Founder: React.FC<FounderProps> = ({ name, role, avatarText }) => {
       </Avatar>
       <h3 className="text-xl font-bold">{name}</h3>
       <p className="text-ramen-gray mb-2">{role}</p>
-      <button className="text-ramen-purple hover:text-ramen-purple/80 transition-colors">
+      <a 
+        href={linkedinUrl} 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="text-ramen-purple hover:text-ramen-purple/80 transition-colors"
+        aria-label={`${name}'s LinkedIn profile`}
+      >
         <Linkedin className="w-5 h-5" />
-      </button>
+      </a>
     </div>
   );
 };
@@ -44,11 +51,13 @@ const FoundersSection: React.FC = () => {
             name="Kevin Gough" 
             role="Co-Founder" 
             avatarText="KG" 
+            linkedinUrl="https://www.linkedin.com/in/briankemler/"
           />
           <Founder 
             name="Brian Kemler" 
             role="Co-Founder" 
             avatarText="BK" 
+            linkedinUrl="https://www.linkedin.com/in/briankemler/"
           />
         </div>
       </div>
