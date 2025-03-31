@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
             {
               icon: <Lightbulb className="w-10 h-10 text-ramen-purple" />,
               title: "No-Code Solutions",
-              description: "Implement AI features without writing a single line of code."
+              description: "Harness the power of no-code AI to make your product more accessible."
             },
             {
               icon: <Sparkles className="w-10 h-10 text-ramen-purple" />,
