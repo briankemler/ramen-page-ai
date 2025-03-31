@@ -29,7 +29,7 @@ const AboutSection: React.FC = () => {
             },
             {
               icon: <CircleHelp className="w-10 h-10 text-ramen-purple" />,
-              title: "Compliant Ready",
+              title: "Compliance Ready",
               description: "Meet the needs of the European Accessibility Act (EAA) with our accessibility solutions."
             }
           ].map((feature, idx) => (
