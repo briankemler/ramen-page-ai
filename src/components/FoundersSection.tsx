@@ -53,7 +53,7 @@ const FoundersSection: React.FC = () => {
             name="Kevin Gough" 
             role="Co-Founder" 
             avatarText="KG" 
-            linkedinUrl="https://www.linkedin.com/in/briankemler/"
+            linkedinUrl="https://www.linkedin.com/in/kevingough/"
             imageSrc="/lovable-uploads/4e7a95e9-3870-4023-86bf-4cddd7c8939c.png"
           />
           <Founder 
