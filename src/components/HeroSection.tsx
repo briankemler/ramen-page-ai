@@ -3,6 +3,10 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 
 const HeroSection: React.FC = () => {
+  const handleJoinWaitlist = () => {
+    window.open("https://forms.gle/sFS841tsHWxk7wLE6", "_blank");
+  };
+
   return (
     <section className="relative h-screen flex items-center bg-gradient-to-r from-ramen-light-purple to-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-radial from-transparent to-white/50 z-0"></div>
@@ -26,6 +30,7 @@ const HeroSection: React.FC = () => {
           <div className="flex gap-4">
             <Button 
               className="bg-ramen-purple hover:bg-ramen-purple/90 text-white rounded-full px-8 py-6 text-lg"
+              onClick={handleJoinWaitlist}
             >
               Join Waitlist
             </Button>
