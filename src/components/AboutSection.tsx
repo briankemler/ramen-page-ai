@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
             Democratizing <span className="gradient-text">AI Accessibility</span>
           </h2>
           <p className="text-ramen-dark/70 text-lg">
-            We're building tools that make AI integration simple, accessible, and effective.
+            Ramen AI makes Accessibility compliance simple, low cost and effective.
           </p>
         </div>
 
