@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
             <span className="gradient-text">Ramen AI</span>
           </h1>
           <p className="text-xl md:text-2xl text-ramen-dark/80 max-w-3xl mb-8">
-            No-code AI solutions to make your product more accessible and useful.
+            No-code AI solutions to make your product more accessible, useful and compliant.
           </p>
           <div className="flex gap-4">
             <Button 
