@@ -54,7 +54,7 @@ const FoundersSection: React.FC = () => {
             role="Co-Founder" 
             avatarText="KG" 
             linkedinUrl="https://www.linkedin.com/in/briankemler/"
-            imageSrc="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
+            imageSrc="/lovable-uploads/4e7a95e9-3870-4023-86bf-4cddd7c8939c.png"
           />
           <Founder 
             name="Brian Kemler" 
