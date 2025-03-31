@@ -1,13 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React from "react";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import FoundersSection from "@/components/FoundersSection";
+import ContactSection from "@/components/ContactSection";
+
+const Index: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="min-h-screen">
+      <HeroSection />
+      <AboutSection />
+      <FoundersSection />
+      <ContactSection />
+      
+      <footer className="bg-white py-8 text-center text-ramen-gray text-sm">
+        <div className="container mx-auto px-4">
+          <p>© {new Date().getFullYear()} Ramen AI. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
   );
 };
 
