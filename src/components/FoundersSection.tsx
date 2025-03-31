@@ -1,19 +1,21 @@
 
 import React from "react";
 import { Linkedin } from "lucide-react";
-import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 interface FounderProps {
   name: string;
   role: string;
   avatarText: string;
   linkedinUrl: string;
+  imageSrc: string;
 }
 
-const Founder: React.FC<FounderProps> = ({ name, role, avatarText, linkedinUrl }) => {
+const Founder: React.FC<FounderProps> = ({ name, role, avatarText, linkedinUrl, imageSrc }) => {
   return (
     <div className="flex flex-col items-center">
       <Avatar className="w-32 h-32 mb-4 border-4 border-ramen-light-purple">
+        <AvatarImage src={imageSrc} alt={`Photo of ${name}`} />
         <AvatarFallback className="bg-ramen-purple text-white text-2xl">
           {avatarText}
         </AvatarFallback>
@@ -52,12 +54,14 @@ const FoundersSection: React.FC = () => {
             role="Co-Founder" 
             avatarText="KG" 
             linkedinUrl="https://www.linkedin.com/in/briankemler/"
+            imageSrc="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952"
           />
           <Founder 
             name="Brian Kemler" 
             role="Co-Founder" 
             avatarText="BK" 
             linkedinUrl="https://www.linkedin.com/in/briankemler/"
+            imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
           />
         </div>
       </div>
