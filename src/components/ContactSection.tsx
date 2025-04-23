@@ -9,7 +9,7 @@ const ContactSection: React.FC = () => {
   
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    window.open("https://forms.gle/sFS841tsHWxk7wLE6", "_blank");
+    window.open("https://forms.gle/k4GdxJDY6gxKT3d9A", "_blank");
   };
 
   return (

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection: React.FC = () => {
   const handleJoinWaitlist = () => {
-    window.open("https://forms.gle/sFS841tsHWxk7wLE6", "_blank");
+    window.open("https://forms.gle/k4GdxJDY6gxKT3d9A", "_blank");
   };
 
   return (
