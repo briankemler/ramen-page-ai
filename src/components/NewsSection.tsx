@@ -7,11 +7,7 @@ const NEWS_ITEMS = [
   {
     date: "April 2025",
     title: "Character VC Foundation Sprint",
-    content: "Character VC has selected RamenAI to take part in its exclusive, first-time in person Foundation Sprint in San Francisco on April 22nd and April 23rd. RamenAI is honored to be part of this select group.",
-    link: {
-      text: "foundation sprint",
-      url: "https://www.character.vc/fsw"
-    }
+    content: "Character VC has selected RamenAI to take part in its <a href='https://www.character.vc/fsw' target='_blank' rel='noopener noreferrer' class='text-ramen-purple hover:underline'>exclusive, first-time in person Foundation Sprint</a> in San Francisco on April 22nd and April 23rd. RamenAI is honored to be part of this select group.",
   },
   {
     date: "April 2025",
@@ -52,17 +48,7 @@ const NewsSection: React.FC = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-ramen-dark/70 mb-2">{item.content}</p>
-                {item.link && (
-                  <a 
-                    href={item.link.url} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="text-ramen-purple hover:underline"
-                  >
-                    {item.link.text}
-                  </a>
-                )}
+                <p className="text-ramen-dark/70 mb-2" dangerouslySetInnerHTML={{ __html: item.content }}></p>
               </CardContent>
             </Card>
           ))}
