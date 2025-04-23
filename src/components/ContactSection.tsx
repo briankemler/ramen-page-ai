@@ -39,7 +39,7 @@ const ContactSection: React.FC = () => {
             </Button>
           </form>
           <p className="text-sm text-ramen-white/50 mt-4 text-center">
-            We're currently in stealth mode. By joining our waitlist, you'll be the first to know when we launch.
+            We're currently in the pre-seed stage and are operating in semi-stealth mode.
           </p>
         </div>
       </div>
