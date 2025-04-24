@@ -2,7 +2,6 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Newspaper, Rss } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 const NEWS_ITEMS = [
   {
@@ -45,32 +44,30 @@ const NewsSection: React.FC = () => {
           </p>
         </div>
 
-        <ScrollArea className="h-[600px] max-w-4xl mx-auto rounded-lg">
-          <div className="grid gap-6 md:grid-cols-2 p-1">
-            {NEWS_ITEMS.map((item, index) => (
-              <Card key={index} className="transition-all hover:shadow-lg overflow-hidden">
-                <div className="relative">
-                  <AspectRatio ratio={16 / 9}>
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      className="object-cover w-full h-full"
-                    />
-                  </AspectRatio>
-                </div>
-                <CardHeader>
-                  <CardTitle className="flex justify-between items-center">
-                    <span>{item.title}</span>
-                    <span className="text-sm text-ramen-gray">{item.date}</span>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-ramen-dark/70 mb-2" dangerouslySetInnerHTML={{ __html: item.content }}></p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </ScrollArea>
+        <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
+          {NEWS_ITEMS.map((item, index) => (
+            <Card key={index} className="transition-all hover:shadow-lg overflow-hidden">
+              <div className="relative">
+                <AspectRatio ratio={16 / 9}>
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+              </div>
+              <CardHeader>
+                <CardTitle className="flex justify-between items-center">
+                  <span>{item.title}</span>
+                  <span className="text-sm text-ramen-gray">{item.date}</span>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-ramen-dark/70 mb-2" dangerouslySetInnerHTML={{ __html: item.content }}></p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
       </div>
     </section>
   );
