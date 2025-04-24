@@ -1,14 +1,10 @@
 
-import React, { useState } from "react";
+import React from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Send } from "lucide-react";
 
 const ContactSection: React.FC = () => {
-  const [email, setEmail] = useState("");
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleClick = () => {
     window.open("https://forms.gle/k4GdxJDY6gxKT3d9A", "_blank");
   };
 
@@ -24,21 +20,15 @@ const ContactSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="max-w-md mx-auto">
-          <form onSubmit={handleSubmit} className="flex w-full max-w-md items-center space-x-2">
-            <Input
-              type="email"
-              placeholder="Enter your email"
-              className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <Button type="submit" className="bg-ramen-purple hover:bg-ramen-purple/90">
-              <Send className="h-4 w-4 mr-2" />
-              Join
-            </Button>
-          </form>
-          <p className="text-sm text-ramen-white/50 mt-4 text-center">
+        <div className="max-w-md mx-auto text-center">
+          <Button 
+            onClick={handleClick} 
+            className="bg-ramen-purple hover:bg-ramen-purple/90"
+          >
+            <Send className="h-4 w-4 mr-2" />
+            Join Waitlist
+          </Button>
+          <p className="text-sm text-ramen-white/50 mt-4">
             We're currently in the pre-seed stage and are operating in semi-stealth mode.
           </p>
         </div>
@@ -48,3 +38,4 @@ const ContactSection: React.FC = () => {
 };
 
 export default ContactSection;
+
