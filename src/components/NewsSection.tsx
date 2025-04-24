@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Newspaper, Rss } from "lucide-react";
@@ -9,8 +8,8 @@ const NEWS_ITEMS = [
     date: "April 2025",
     title: "Character VC Foundation Sprint",
     content: "Character VC has selected RamenAI to take part in its <a href='https://www.character.vc/fsw' target='_blank' rel='noopener noreferrer' class='text-ramen-purple hover:underline'>exclusive, first-time in person Foundation Sprint</a> in San Francisco on April 22nd and April 23rd. RamenAI is honored to be part of this select group.",
-    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81",
-    alt: "Group of people collaborating around screens"
+    image: "/lovable-uploads/1a2225ee-6653-44f4-ab06-c7e04f2d8814.png",
+    alt: "Strategy planning board with sticky notes showing different lenses of analysis"
   },
   {
     date: "April 2025",
