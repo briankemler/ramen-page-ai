@@ -14,7 +14,7 @@ const NEWS_ITEMS = [
   {
     date: "April 2025",
     title: "Pre-seed Stage Announcement",
-    content: "We're excited to announce that Ramen AI is now in the pre-seed stage, working towards making accessibility seamless for everyone.",
+    content: "We're excited to announce that RamenAI is now in the pre-seed stage, working towards making accessibility seamless for everyone.",
     image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d",
     alt: "Person working on laptop"
   },
